@@ -36,30 +36,27 @@
 			
 			
 			.container{
+				 background: black;
+				 height: 100vh;
 				 display: grid;
-  grid-template-columns: 50px 50px 50px 50px 50px;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "a a a a d"
-    "b b e c c"
-    "b b e f g";
-			}
+				 grid-template-areas:"a a a . b"
+									 "c c d d e"
+									 "c c . g f";
+				grid-auto-rows:minmax(100px,auto);
+				grid-auto-columns:minmax(100px,auto);
+				justify-content: center;
+				align-content: center; 
+				 }
 			.box{
-			border: 0.2px solid black;
-				border-radius:3px;
-				height:100px;
-				width:100%;
-				justify-content:stretch;
 			}
 			.A{
 			background:tomato;
 			grid-area: a;
-			grid-column:1/4;
+			
 			}
 			.B{
 			background:lightgrey;
-			grid-column:1/3;
-			grid-row: 2/4;
+			grid-area: b;
 			}
 			.C{
 			background:lightgreen;
@@ -75,11 +72,11 @@
 			}
 			
 			.F{
-			background:lightpurple;
+			background:purple;
 			grid-area: f;
 			}
 			.G{
-			background:lightbrown;
+			background:brown;
 			grid-area: g;
 			}
 			
@@ -87,13 +84,13 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="box a">A</div>
-			<div class="box b">B</div>
-			<div class="box c">C</div>
-			<div class="box d">D</div>
-			<div class="box e">E</div>
-			<div class="box f">F</div>
-			<div class="box g">G</div>
+			<div class="box A">A</div>
+			<div class="box B">B</div>
+			<div class="box C">C</div>
+			<div class="box D">D</div>
+			<div class="box E">E</div>
+			<div class="box F">F</div>
+			<div class="box G">G</div>
 		</div>
 	</body>
 </html>
