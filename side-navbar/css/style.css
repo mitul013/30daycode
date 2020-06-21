@@ -139,4 +139,14 @@ h1{
  .body{
 	 background:white;
  }
+ 
+ li a{
+	text-decoration: none;
+	color:grey;
+	display:flex;
+	align-items: center;
+	justify: center;
+	flex-direction:column;
+}
+ 
 }
