@@ -1,5 +1,6 @@
 <html>
 	<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
@@ -16,8 +17,8 @@
 				<div id="computer-lable" class="lables">Wrong</div>
 				<span id="user-score">0</span>:<span id="computer-score">0</span>
 			</div>
-			<button onclick="start()">Start</button>
-			<button onclick="stop()">Stop</button>
+			<button onclick="start()" id="start">Start</button>
+			<button onclick="stop()" id="stop">Stop</button>
 		</div>
 		<div class="imgtable">
 			<table>
@@ -58,5 +59,21 @@
 		</div>
 	</div>
 	<script src="js/script.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$("#start").click(function() {
+			$('html,body').animate({
+			scrollTop: $(".imgtable").offset().top},
+			'slow');
+		});
+		
+		$("#stop").click(function() {
+			$('html,body').animate({
+			scrollTop: $(".container").offset().top},
+			scrollTop: $(".container").offset().top},
+			'slow');
+		});
+		
+	</script>
 	</body>
 </html>
