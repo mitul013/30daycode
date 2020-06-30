@@ -96,6 +96,19 @@ li a{
 	justify: center;
 }
 
+.text{
+	opacity: 0;
+	transform: translateY(40px);
+	transition: .5s all ease-in-out;
+}
+
+.text-appear{
+	opacity: 1;
+	transform: translateY(0px);
+	transition: .5s all ease-in-out;
+}
+
+
 i{
 	text-color:grey;
 	padding: 5px;
