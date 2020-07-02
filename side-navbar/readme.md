@@ -19,19 +19,24 @@ body::-webkit-scrollbar-thumb{
 (2) When we use display:none to display:block we are not able to transition effect
 
 sol 1 :- use opacity 0 and pointer-events:none 
+
 problem:- but this sol take space
 
 sol2 :- add css like below using key frames
+
 @-webkit-keyframes slide-down {
       0% { opacity: 0; -webkit-transform: translateY(-50%); }   
     100% { opacity: 1; -webkit-transform: translateY(0); }
 }
+
+
 @-moz-keyframes slide-down {
       0% { opacity: 0; -moz-transform: translateY(-50%); }   
     100% { opacity: 1; -moz-transform: translateY(0); }
 }
 
 apply in any css like
+
 	-webkit-animation: slide-down .6s ease-out;
     	-moz-animation: slide-down .6s ease-out;
       
