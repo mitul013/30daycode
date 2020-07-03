@@ -41,3 +41,7 @@ apply in any css like
     	-moz-animation: slide-down .6s ease-out;
       
 also we modify this to translae X ,rotate and e.t.c
+
+
+3) Add gsap js for animation and for learn more go to this link
+https://greensock.com/docs/v3/GSAP/gsap.fromTo()
